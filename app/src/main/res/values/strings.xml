@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cloudflare Manager</string>
+    <string name="tunnel_channel_name">Tunnel Status</string>
+    <string name="tunnel_notif_title">Tunnel Running</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_start">Start</string>
+    <string name="btn_stop">Stop</string>
+    <string name="btn_exit">Exit</string>
+    <string name="btn_awake_to_lock">Awake to Lock</string>
+    <string name="btn_lock_on">Lock: On</string>
+    <string name="status_offline">🔴 Offline</string>
+    <string name="status_starting">🟡 Starting…</string>
+    <string name="status_online">🟢 Online</string>
+    <string name="status_error">🟠 Error</string>
+    <string name="copied">✓ Link Copied</string>
+    <string name="auto_copied">✓ Link auto-copied</string>
+</resources>

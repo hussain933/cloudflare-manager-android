@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy</title>
+  <style>
+    body { background: #121212; color: #eaeaea; font-family: -apple-system, Roboto, sans-serif;
+           padding: 24px; line-height: 1.7; font-size: 15px; }
+    h1   { color: #f6821f; font-size: 22px; margin-bottom: 16px; }
+    h2   { color: #eaeaea; font-size: 17px; margin: 20px 0 8px; }
+    p    { margin-bottom: 12px; color: #aaa; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p>Last updated: July 2026</p>
+
+  <h2>1. No Data Collection</h2>
+  <p>Cloudflare Manager does not collect, transmit, or store any personal data on external servers. All app data (settings, logs, the cloudflared binary) stays on your device in the app's private storage.</p>
+
+  <h2>2. Network Access</h2>
+  <p>The app makes the following network requests:</p>
+  <ul style="color:#aaa; padding-left:20px; margin-bottom:12px;">
+    <li><strong>cloudflared tunnel traffic</strong> — when you start a tunnel, cloudflared connects to Cloudflare's edge servers to establish the tunnel. This is the core function of the app.</li>
+    <li><strong>GitHub Releases API</strong> — the app periodically checks for newer versions of the cloudflared binary at <code>api.github.com/repos/cloudflare/cloudflared/releases/latest</code>. No personal data is sent in this request.</li>
+  </ul>
+
+  <h2>3. Local Permissions</h2>
+  <p>The app requires certain Android permissions (INTERNET, FOREGROUND_SERVICE, WAKE_LOCK, POST_NOTIFICATIONS) solely to provide its core functionality. None of these are used to collect data about you.</p>
+
+  <h2>4. Logs</h2>
+  <p>The app writes cloudflared output logs to your device's private storage. These logs are not uploaded anywhere. You can view them via the Settings → View Logs option, or delete them by clearing the app's storage.</p>
+
+  <h2>5. Contact</h2>
+  <p>If you have questions about this privacy policy, you may contact the developer through the app's distribution channel.</p>
+</body>
+</html>

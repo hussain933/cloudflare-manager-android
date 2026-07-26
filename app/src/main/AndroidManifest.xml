@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cloudflaremanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:name=".CloudflareManagerApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Cloudflare Manager"
+        android:theme="@style/Theme.CloudflareManager"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CloudflareManager.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".PortSetupActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CloudflareManager.NoActionBar" />
+
+        <activity
+            android:name=".LoaderActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CloudflareManager.NoActionBar" />
+
+        <activity
+            android:name=".WebViewActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/Theme.CloudflareManager.NoActionBar" />
+
+        <activity
+            android:name=".SimpleWebActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CloudflareManager.NoActionBar" />
+
+        <service
+            android:name=".TunnelService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <receiver
+            android:name=".NotificationActionReceiver"
+            android:exported="false" />
+
+    </application>
+</manifest>
