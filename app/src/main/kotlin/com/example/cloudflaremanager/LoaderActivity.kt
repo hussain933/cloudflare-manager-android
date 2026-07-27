@@ -60,7 +60,7 @@ class LoaderActivity : AppCompatActivity() {
             val port = PreferencesManager.getLocalServerPort(this@LoaderActivity)
             val webServer = LocalWebServer(this@LoaderActivity, port)
             try {
-                webServer.start(fi.iki.elonen.NanoHTTPD.SOCKET_READY_TIMEOUT, false)
+                webServer.start(fi.iki.elonen.NanoHTTPD.SOCKET_READ_TIMEOUT, false)
                 server = webServer
             } catch (e: java.net.BindException) {
                 showError("Port $port already in use — please choose another port in Settings.")
